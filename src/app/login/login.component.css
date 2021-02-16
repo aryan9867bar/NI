@@ -1,0 +1,49 @@
+.login-container {
+    background-color: rgb(241, 243, 241);
+    height: 100vh;
+}
+
+.login-form {
+    width: 400px;
+    max-height: 350px;
+}
+
+.u-img {
+    height: 75px;
+    width: 75px;
+    align-self: center;
+}
+
+.u-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.username {
+    margin-top: 10px;
+}
+
+.password {
+    margin-top: 10px;
+}
+
+.submit {
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 10px;
+    
+} 
+.sign {
+    margin-top: 10px;
+}
+.fog {
+     text-align: center;
+}
+
+.png {
+    height: 50px;
+    width: 75px;
+    align-self: left;
+    margin-right: 5 px;
+
+}
