@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
+  templateUrl: "./dashboard.component.html",
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
   show = true;
-  // finish = true;
+  finish = true;
   constructor() { }
 
   ngOnInit(): void {
@@ -17,8 +17,8 @@ export class DashboardComponent implements OnInit {
     this.show = !this.show;
   }
 
-  // close() {
-  //   this.finish = !this.finish;
-  // }
+  close() {
+    this.finish = !this.finish;
+  }
 
 }

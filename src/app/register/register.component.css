@@ -1,4 +1,7 @@
-
+img {
+    height: 100px;
+    width: 150px;
+}
 .form {
     margin-top: 50px;
 }
@@ -12,4 +15,8 @@
     height: 600px;
     width: 750px;
 
+}
+
+.error {
+    color: red;
 }

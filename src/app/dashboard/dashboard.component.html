@@ -1,5 +1,4 @@
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-danger d-flex flex-row ">
+<div class="navbar navbar-expand-lg navbar-dark bg-danger d-flex flex-row " *ngIf="finish">
   <div>
     <i class="ri-phone-fill mr-5">+977-412700</i>
   </div>
@@ -18,10 +17,10 @@
     <i class="ri-linkedin-box-fill mr-2"></i>
     <i class="ri-instagram-fill mr-2"></i>
     <i class="ri-twitter-fill mr-5"></i>
-    <!-- <span (click)="close()" class="close">&times;</span> -->
+    <span (click)="close()" class="close">&times;</span>
   </div>
 
-</nav>  
+</div>  
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary app-navbar d-flex flex-row">
@@ -40,18 +39,24 @@
          </ul>
        </div>
   </nav>
+
   <div class="main-container d-flex ">
       <div class="sidebar" *ngIf="show" >
-        jnjnjn
-      </div>
-      <!-- <div class="close" *ngIf="finish">
-        
-      </div>    
-  -->
+        <div class="div-img">
+          <img src="../../assets/images/logo.jpg" style="height: 250px; width: 250px; border-radius: 50%;" alt="">
+        </div>
+
+        <div>
+          
+        </div>
+
+
+
       <div class="content">
           <router-outlet></router-outlet>
       </div>
-  </div> 
+       </div> 
+  </div>
 
 
 

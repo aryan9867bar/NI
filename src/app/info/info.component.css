@@ -1,0 +1,26 @@
+.list-wrapper {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.list {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.list-item {
+    background-color: cornsilk;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.item-input {
+    padding: 10px;
+    max-width: 200px;
+}
+
+.add-btn {
+    padding: 10px;
+}

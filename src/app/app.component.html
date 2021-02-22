@@ -1,1 +1,14 @@
 <router-outlet></router-outlet>
+<!-- <p class="c-green" [ngClass]="{'c-red':list.length > 4}">
+    {{list.length > 4 ? "The list is full!":"Add More"}}
+</p>
+<div class="list-wrapper">
+    <ul class="list">
+        <li class="list-item" *ngFor="let l of list; let i =index">
+            {{l}}
+            <button class=" btn btn-danger close-btn" 
+            (click)="deleteItem(i)">x</button>
+        </li>
+    </ul>
+</div>
+<app-info [data]="list" (getData)="getItem($event)"></app-info> -->

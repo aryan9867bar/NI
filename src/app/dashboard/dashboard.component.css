@@ -2,7 +2,7 @@ i {
     height: 250px;
 }
 
-img {
+.container-fluid img {
     height: 60px;
     width: 80px;
     border-radius: 50px;
@@ -48,4 +48,5 @@ img {
     padding: 12px 16px;
     transform: translate(0%, -50%);
   }
+  
   

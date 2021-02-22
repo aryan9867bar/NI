@@ -1,0 +1,8 @@
+<div class="item-input">    
+    <input type="text" class="form-control" [(ngModel)]="item">
+</div>
+
+<div class="add-btn">
+    <button class="btn btn-primary" [disabled]="!item" 
+    (keyup.enter)="addValue()" (click)="addValue()">Add item</button>
+</div> 

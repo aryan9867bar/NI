@@ -1,0 +1,36 @@
+.list-wrapper {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.list {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.list-item {
+    background-color: cornsilk;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.close-btn {
+    float: right;
+    height: 20px;
+    width: 20px;
+    line-height: 5px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.c-red {
+    font-size: 24px !important;
+    color: red !important;
+}
+
+.c-green {
+    font-size: 24px;
+    color: green;
+} 
