@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   constructor(private router:Router) { 
     this.username = "";
     this.password = "";
-    this.loginDetail = {
+       this.loginDetail = {
       username:"admin",
       password:"admin"
     }
@@ -27,6 +27,8 @@ export class LoginComponent implements OnInit {
 
     if(this.username !== "" || this.password !== "") {
       if(this.username === this.loginDetail.username && this.password === this.loginDetail.password) {
+        const token = "5a7815d73f37b40158c1bb887dc97ef3";
+        localStorage.setItem("access_token", token);
         this.router.navigate(["/Dashboard"]); 
       } else {
         alert("Wrong username or password!");

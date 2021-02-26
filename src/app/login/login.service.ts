@@ -12,7 +12,7 @@ export class LoginService {
 
     }
 
-    login(user:any):Observable<any> {
-        return this.http.post("http://localhost:3000/login", user)
-    }
+    // login(user:any):Observable<any> {
+    //     return this.http.post("http://localhost:3000/login", user)
+    // }
 } 
