@@ -35,6 +35,7 @@ export class RegisterComponent implements OnInit {
     console.log(this.registerForm.value)
   }
 
+
   validatename(field:any):boolean {
     const value = this.registerForm.get(field);
 
