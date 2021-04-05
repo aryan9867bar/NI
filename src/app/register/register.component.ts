@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
 import { FormBuilder, FormGroup, FormControl, Validators} from "@angular/forms";
 
+
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -10,13 +12,12 @@ import { FormBuilder, FormGroup, FormControl, Validators} from "@angular/forms";
 export class RegisterComponent implements OnInit {
   registerForm:FormGroup;
 
-  constructor(private fb:FormBuilder) {
+  constructor(private router: Router,private fb:FormBuilder) {
 
-
-    this.registerForm = this.fb.group({
+      this.registerForm = this.fb.group({
       firstName: new FormControl("", [Validators.required, Validators.maxLength(6), Validators.minLength(3)]),
       lastName: new FormControl("", [Validators.required]),
-      middle: new FormControl("", [Validators.required])
+      middleName: new FormControl("", [Validators.required])
     })
 
 
@@ -25,7 +26,7 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
 
- 
+
   register() {
     console.log(this.registerForm);
     if(this.registerForm.status === "INVALID") {
@@ -41,7 +42,7 @@ export class RegisterComponent implements OnInit {
 
     if(value?.invalid && value.dirty && value.touched) {
       return true
-    } else { 
+    } else {
       return false
     }
   }
